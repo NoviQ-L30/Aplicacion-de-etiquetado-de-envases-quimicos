@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Proyecto individual</string>
+
+    <string-array name="unidades_medida">
+        <item>%</item>
+        <item>‰</item>
+        <item>ppm</item>
+        <item>mmol/L</item>
+        <item>mol/L</item>
+        <item>M</item>
+        <item>mol/kg</item>
+        <item>g/L</item>
+        <item>g/mL</item>
+        <item>oz/gal</item>
+        <item>mg/L</item>
+        <item>lb/gal</item>
+        <item>oz/in3</item>
+        <item>lb/ft3</item>
+        <item>lb/in3</item>
+        <!-- Agrega otras unidades de medida según sea necesario -->
+    </string-array>
+</resources>

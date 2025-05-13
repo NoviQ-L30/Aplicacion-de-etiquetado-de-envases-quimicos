@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="horizontal">
+<LinearLayout
+    android:id="@+id/linearLayoutMarco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- Contenido de linearLayoutN -->
+
+    <LinearLayout
+        android:id="@+id/linearLayoutN4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutN2"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:background="#f1f8fa"
+            android:orientation="vertical">
+
+            <!-- LinearLayout horizontal con fondo negro para las imágenes -->
+            <LinearLayout
+                android:id="@+id/linearLayoutN3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1f8fa"
+                android:orientation="horizontal">
+
+                <!-- ImageView 1 -->
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 2 -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 3 -->
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 4 -->
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 5 -->
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 6 -->
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 7 -->
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 8 -->
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+                <!-- ImageView 9 -->
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaults" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonGenerarEtiqueta"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Generar Etiqueta" />
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

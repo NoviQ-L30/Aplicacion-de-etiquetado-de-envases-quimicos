@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4fdff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/formulaContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/checkBox1Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 1"
+                android:focusable="true"
+                android:src="@drawable/inflamable" />
+
+            <ImageView
+                android:id="@+id/checkBox2Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 2"
+                android:focusable="true"
+                android:src="@drawable/explosion" />
+
+            <ImageView
+                android:id="@+id/checkBox3Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 3"
+                android:focusable="true"
+                android:src="@drawable/incendio_peor" />
+
+            <ImageView
+                android:id="@+id/checkBox4Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 4"
+                android:focusable="true"
+                android:src="@drawable/caliente_explosion" />
+
+            <ImageView
+                android:id="@+id/checkBox5Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 5"
+                android:focusable="true"
+                android:src="@drawable/quemadura" />
+
+            <ImageView
+                android:id="@+id/checkBox6Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 6"
+                android:focusable="true"
+                android:src="@drawable/mortal" />
+
+            <ImageView
+                android:id="@+id/checkBox7Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 7"
+                android:focusable="true"
+                android:src="@drawable/irritacion" />
+
+            <ImageView
+                android:id="@+id/checkBox8Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 8"
+                android:focusable="true"
+                android:src="@drawable/efectos" />
+
+            <ImageView
+                android:id="@+id/checkBox9Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Checkbox 9"
+                android:focusable="true"
+                android:src="@drawable/toxico" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fórmula" />
+
+        <!-- AutoCompleteTextView para ingresar la fórmula química -->
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/editTextFormula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la fórmula"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ingrese el nombre"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/spinnerNombres"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masa Molar" />
+
+        <EditText
+            android:id="@+id/editTextMasaMolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la masa molar"
+            android:inputType="numberDecimal"
+            android:digits="0123456789." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concentración" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editTextNumero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ingrese un número"
+                android:inputType="numberDecimal"/>
+
+            <Spinner
+                android:id="@+id/spinnerUnidadMedida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha" />
+
+        <EditText
+            android:id="@+id/editTextFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la fecha"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propósito" />
+
+        <EditText
+            android:id="@+id/editTextProposito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el propósito"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preparado por" />
+
+        <EditText
+            android:id="@+id/editTextPreparadoPor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del preparador"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Selecciona el color del marco" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/buttonBlanco"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blanco"
+                android:text="Blanco" />
+
+            <Button
+                android:id="@+id/buttonGris"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gris"
+                android:text="Gris" />
+
+            <Button
+                android:id="@+id/buttonRojo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/rojo"
+                android:text="Rojo" />
+
+            <Button
+                android:id="@+id/buttonAmarillo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/amarillo"
+                android:text="Amarillo" />
+
+            <Button
+                android:id="@+id/buttonVerde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/verde"
+                android:text="Verde" />
+
+            <Button
+                android:id="@+id/buttonCeleste"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/celeste"
+                android:text="Celeste" />
+
+            <Button
+                android:id="@+id/buttonAzul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/azul"
+                android:text="Azul" />
+
+            <Button
+                android:id="@+id/buttonMorado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/morado"
+                android:text="Morado" />
+
+            <Button
+                android:id="@+id/buttonNegro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/negro"
+                android:text="Negro" />
+
+            <!-- Botón para reiniciar los campos -->
+
+            <!-- Botón para generar previsualización -->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seleccionaColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text=":" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Reiniciar"
+        app:layout_constraintEnd_toStartOf="@id/buttonGeneratePreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formulaContainer2" />
+
+    <Button
+        android:id="@+id/buttonGeneratePreview"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Generar previsualización"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonReset"
+        app:layout_constraintTop_toBottomOf="@id/formulaContainer2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
